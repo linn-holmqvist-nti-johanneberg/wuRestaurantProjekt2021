@@ -1,0 +1,57 @@
+
+.wrapper_startsida {
+    display: grid;
+    grid-template-areas: 
+    'he he he he he'
+    'na na na na na'
+    'a1 a1 a1 se se'
+    'a2 a2 a2 se se'
+    'fo fo fo fo fo'
+    ;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+header{
+    grid-area: he;
+    background-color: honeydew;
+}
+
+nav {
+    grid-area: na;
+    background-color: green;
+}
+
+footer {
+    grid-area: fo;
+    background-color: rgb(4, 10, 1);
+    color: white;
+    padding: 10px;
+}
+
+.welcome {
+    grid-area: a1;
+}
+
+.recention {
+    grid-area: a2;
+}
+
+.broccoli {
+    grid-area: se;
+}
+
+.visit_img {
+    width: 30px;
+    height: auto;
+}
+
+img {
+    width: 140px;
+    height: auto;
+}
+
+footer a {
+color: white;
+}
