@@ -1,57 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
 
 .wrapper_startsida {
     display: grid;
     grid-template-areas: 
-    'he he he he he'
-    'na na na na na'
-    'a1 a1 a1 se se'
-    'a2 a2 a2 se se'
-    'fo fo fo fo fo'
+    'na na na'
+    'he he he'
+    'a1 a1 se'
+    'a2 a2 se'
+    'fo fo fo'
     ;
 
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 70px 0.4fr 1fr 1fr 160px;
+    border: none;
+    margin: none;
+    padding: none;
 }
 
 header{
+    display: flex;
     grid-area: he;
-    background-color: honeydew;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
 }
 
 nav {
+    display: flex;
     grid-area: na;
-    background-color: green;
+    background-color: rgb(7, 19, 1);
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 20px;
+    position: relative;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(186, 190, 186);
+    text-decoration: none;
+}
+
+#logga {
+    width: 85px;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    border-radius: 4px;
+    
 }
 
 footer {
     grid-area: fo;
-    background-color: rgb(4, 10, 1);
+    background-color: green;
     color: white;
     padding: 10px;
+    align-items: center;
+}
+
+footer a {
+color: white;
+text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(182, 177, 177);
+    text-decoration: none;
 }
 
 .welcome {
     grid-area: a1;
+    margin-left: 10px;
 }
 
 .recention {
     grid-area: a2;
+    margin-left: 10px;
 }
+
+.recention_bilder {
+    width: 70px;
+    margin-top: 15px;
+}
+
 
 .broccoli {
     grid-area: se;
+    padding-left: 100px;
+    padding-top: 40px;
+
+}
+
+#broocoli_img {
+    width: 350px;
+    height: auto;
 }
 
 .visit_img {
     width: 30px;
     height: auto;
+    border-radius: 8px;
+    margin-bottom: 2px;
+    margin-top: 2px;
 }
 
-img {
-    width: 140px;
-    height: auto;
-}
-
-footer a {
-color: white;
-}
