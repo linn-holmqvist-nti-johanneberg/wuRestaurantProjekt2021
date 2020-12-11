@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "Programmering",
+			"path": "..\\..\\..\\..\\Desktop\\Programmering"
+		},
+		{
+			"name": "Webbutveckling",
+			"path": "..\\..\\..\\..\\Desktop\\Webbutveckling"
+		},
+		{
+			"name": "wuRestaurantProjekt2021",
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\..\\..\\Downloads\\Prov 3 strangar-20201211T103155Z-001"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "wuRestaurantProjekt2021"
+	}
+}

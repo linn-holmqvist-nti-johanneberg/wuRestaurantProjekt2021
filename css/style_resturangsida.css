@@ -3,6 +3,7 @@
     margin:0;
 }
 
+/*Här är css:n för layouten på alla sidor*/
 .wrapper_startsida {
     display: grid;
     grid-template-areas: 
@@ -14,18 +15,33 @@
     ;
 
     grid-template-columns: 30% 30% 40%;
-    grid-template-rows: 70px 0.4fr 1fr 1fr 160px;
-    border: none;
-    margin: none;
-    padding: none;
+    grid-template-rows: 70px 140px 1fr 1fr 160px;
 }
 
+.wrapper_meny {
+    display: grid;
+    grid-template-areas: 
+    'na na na'
+    'he he he'
+    'a3 a5 a7'
+    'a4 a6 a7'
+    'fo fo fo'
+    ;
+
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 70px 140px 1fr 1fr 160px;
+}
+
+
+/*Samma (använder) css för alla sidor*/
 header{
     display: flex;
     grid-area: he;
     background-color: white;
     align-items: center;
     justify-content: center;
+    font-style: italic;
+    font-size: 30px;
 }
 
 nav {
@@ -58,15 +74,13 @@ nav a:hover {
     top: 8px;
     left: 15px;
     border-radius: 4px;
-    
 }
 
 footer {
     grid-area: fo;
-    background-color: green;
+    background-color: rgb(14, 120, 0);
     color: white;
     padding: 10px;
-    align-items: center;
 }
 
 footer a {
@@ -79,34 +93,6 @@ footer a:hover {
     text-decoration: none;
 }
 
-.welcome {
-    grid-area: a1;
-    margin-left: 10px;
-}
-
-.recention {
-    grid-area: a2;
-    margin-left: 10px;
-}
-
-.recention_bilder {
-    width: 70px;
-    margin-top: 15px;
-}
-
-
-.broccoli {
-    grid-area: se;
-    padding-left: 100px;
-    padding-top: 40px;
-
-}
-
-#broocoli_img {
-    width: 350px;
-    height: auto;
-}
-
 .visit_img {
     width: 30px;
     height: auto;
@@ -115,3 +101,60 @@ footer a:hover {
     margin-top: 2px;
 }
 
+article {
+    margin-left: 10px;
+}
+
+section {
+    margin-left: 10px;
+}
+
+/*Här är startsidans css*/
+.welcome {
+    grid-area: a1;
+}
+
+.recention {
+    grid-area: a2;
+}
+
+.recention_bilder {
+    width: 70px;
+    margin-top: 15px;
+}
+
+.stor_broccoli {
+    grid-area: se;
+    padding-left: 100px;
+    padding-top: 40px;
+    background-color: white;
+}
+
+#stor_broocoli_img {
+    width: 380px;
+    height: auto;
+}
+
+
+
+/*Här är menyns css*/
+
+.forratter {
+    grid-area: a3;
+}
+
+.varmratter {
+    grid-area: a4;
+}
+
+.side_orders {
+    grid-area: a5;
+}
+
+.efterratter {
+    grid-area: a6;
+}
+
+.dricka {
+    grid-area: a7;
+}
