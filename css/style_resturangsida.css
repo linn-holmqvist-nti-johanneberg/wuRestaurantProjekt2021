@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin:0;
+    
 }
 
 /*Här är css:n för layouten på alla sidor*/
@@ -15,7 +16,7 @@
     ;
 
     grid-template-columns: 30% 30% 40%;
-    grid-template-rows: 70px 140px 1fr 1fr 160px;
+    grid-template-rows: 70px 140px 1fr 1fr 278px;
 }
 
 .wrapper_meny {
@@ -23,13 +24,15 @@
     grid-template-areas: 
     'na na na'
     'he he he'
-    'a3 a5 a7'
-    'a4 a6 a7'
+    'a3 a4 a6'
+    'a5 a7 a8'
     'fo fo fo'
     ;
 
     grid-template-columns: 30% 30% 40%;
-    grid-template-rows: 70px 140px 1fr 1fr 160px;
+    grid-template-rows: 70px 110px 1fr 1fr 160px;
+    line-height: 1.3;
+    position: relative;
 }
 
 
@@ -40,7 +43,7 @@ header{
     background-color: white;
     align-items: center;
     justify-content: center;
-    font-style: italic;
+    font-family: Garamond;
     font-size: 30px;
 }
 
@@ -109,6 +112,12 @@ section {
     margin-left: 10px;
 }
 
+.icons_line {
+    display: flex;
+    align-items: center;
+}
+
+
 /*Här är startsidans css*/
 .welcome {
     grid-area: a1;
@@ -139,6 +148,12 @@ section {
 
 /*Här är menyns css*/
 
+.fast {
+    display: flex;
+    position: sticky;
+    top: 70px;
+}
+
 .forratter {
     grid-area: a3;
 }
@@ -155,6 +170,10 @@ section {
     grid-area: a6;
 }
 
-.dricka {
+.dricka1 {
     grid-area: a7;
+}
+
+.dricka2 {
+    grid-area: a8;
 }
