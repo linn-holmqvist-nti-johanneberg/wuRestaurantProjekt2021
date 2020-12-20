@@ -3,7 +3,6 @@
     margin: 0;
 }
 
-
 /*Här är css:n för layouten på alla sidor*/
 
 .wrapper_startsida {
@@ -64,7 +63,7 @@ nav {
     grid-area: na;
     background-color: rgb(7, 19, 1);
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     font-size: 20px;
     position: relative;
     position: sticky;
