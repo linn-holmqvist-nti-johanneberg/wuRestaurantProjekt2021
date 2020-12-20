@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +8,34 @@
     <link rel="stylesheet" href="/css/style_resturangsida.css">
 
 </head>
+
 <body>
     <div class="wrapper_kontakt">
-        <header><h1>Brockat & Co</h1></header>
+        <header class="header">
+            <h1>Brockat & Co</h1>
+        </header>
 
         <nav>
-            <a href="/index.html">
+            <a href="/index.html" id="nav_korrekt">
                 <img id="logga" src="/img/broccoli_logo.jpg" alt="Logga">
-            </a>           
+            </a>
             <a href="/index.html">Hem</a>
             <a href="/meny.html">Meny</a>
-            <a href="/kontakt.html">Kontakt</a>
+            <a href="/kontakt.html" class="darker">Kontakt</a>
         </nav>
 
         <article id="kontakt">
-            <h2>Kontakt</h2>
             <br>
+            <h2>Kontakt</h2>
 
             <img src="/img/telefon.jpg" alt="Telefon-ikon" class="kontakt_ikon">
-            <a href="tel: 0709311707">0709311707</a> 
+            <a href="tel: 0709311707">0709311707</a>
             <br>
 
             <img src="/img/mail.jpg" alt="Mail-ikon" class="kontakt_ikon">
             <a href="mailto:linn.holmqvist@elev.ga.ntig.se">BrockatAndCo@gmail.com</a>
             <br><br>
-           
+
             <h3><u>Öppetider</u></h3>
             <p><strong>Måndag:</strong> 16:00 - 00:00</p>
             <p><strong>Tisdag:</strong> 16:00 - 00:00</p>
@@ -41,33 +45,49 @@
             <p><strong>Lördag:</strong> 13:00 - 01:00</p>
             <p><strong>Söndag:</strong> 13:00 - 00:00</p>
             <br><br>
- 
-            <img src="/img/karta.jpg" alt="Karta över Brockat & Co" id="karta">
 
-            <p>Obs, är du nötallergiker hör av dig till oss några dagar i förväg, så löser vi det!</p>
+            <h3><u>Hitta hit</u></h3>
+            <p> 
+                10 Downing Street
+                <br> London
+                <br> Storbritannien
+            </p>
+
+            <br>
+            <a href="https://www.google.com/maps/place/10+Downing+Street/@51.504058,-0.1304143,17z/data=!4m5!3m4!1s0x487604c541d11c47:0xf882a439cb8a5619!8m2!3d51.5033635!4d-0.1276248">
+                <img src="/img/karta.jpg" alt="Karta över Brockat & Co" id="karta">
+            </a>
+            <br><br>
 
         </article>
 
-        <section id="kockens_presentation">
+        <section id="kontakt_img_container">
             <img src="/img/kontaktbild.jpg" alt="Kontaktbild" id="kontaktbild">
-            <p>Hej! Mitt namn är Bert Hagenström, 32 år, bor för tillfället i Buckingham Palaces städskrubb. Har 30 års 
-                erfarenhet av både restaurangbranschen och restaurangverksamheten. Jag finner stolthet över och kärleken till den egna restaurangen. 
-                Glädjen i att laga och servera god mat "med krusiduller” i en glad och trevlig atmosfär och att se till att alla gäster känner sig 
-                välkomna och väl omhändertagna, kort sagt; att få alla att känna sig hemma!</p>
         </section>
 
         <footer>
             <h2>Besök oss på:</h2>
-                
-            <a href="https://www.instagram.com/"><img class="visit_img" src="/img/instagram.jpg" alt="Instagram logga"> Instagram</a>
-            <br>
-        
-            <a href="https://sv-se.facebook.com/"><img class="visit_img" src="/img/facebook.jpg" alt="Facebook logga"> Facebook</a>
-            <br>
-        
-            <a href="https://mobile.twitter.com/?lang=sv"><img class="visit_img" src="/img/twitter.jpg" alt="Twitter logga"> Twitter</a>
+
+            <div class="icons_line">
+                <a href="https://www.instagram.com/"><img class="visit_img" src="/img/instagram.jpg" alt="Instagram logga"></a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <br>
+            </div>
+
+            <div class="icons_line">
+                <a href="https://sv-se.facebook.com/"><img class="visit_img" src="/img/facebook.jpg" alt="Facebook logga"></a>
+                <a href="https://sv-se.facebook.com/">Facebook</a>
+                <br>
+            </div>
+
+            <div class="icons_line">
+                <a href="https://mobile.twitter.com/?lang=sv"><img class="visit_img" src="/img/twitter.jpg" alt="Twitter logga"></a>
+                <a href="https://mobile.twitter.com/?lang=sv">Twitter</a>
+                <br>
+            </div>
         </footer>
     </div>
 
 </body>
+
 </html>

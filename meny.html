@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meny</title>
     <link rel="stylesheet" href="/css/style_resturangsida.css">
-    
+
 </head>
+
 <body>
     <div class="wrapper_meny">
-        
+
         <nav>
-            <a href="/index.html">
+            <a href="/index.html" id="nav_korrekt">
                 <img id="logga" src="/img/broccoli_logo.jpg" alt="Logga">
-            </a>           
+            </a>
             <a href="/index.html">Hem</a>
-            <a href="/meny.html">Meny</a>
+            <a href="/meny.html" class="darker">Meny</a>
             <a href="/kontakt.html">Kontakt</a>
         </nav>
 
 
-        <header class="fast"><h1>Meny</h1></header>  
+        <header class="header">
+            <h1>Meny</h1>
+        </header>
 
         <article class="foratter">
             <h2>Förrätter</h2>
@@ -60,7 +64,7 @@
 
         </article>
 
-        
+
         <article class="efterratter">
             <h2>Efterrätter</h2>
             <h4>Brockade brownies</h4>
@@ -76,7 +80,7 @@
             <h4>Broccolipanacotta</h4>
             <em>med krispigt havrerån, droppar  <br> av citron och flingsalt</em>
             <p>109 sek</p>
-            
+
         </article>
 
         <article class="side_orders">
@@ -101,8 +105,8 @@
             <p>40 sek</p>
             <br>
 
-        </article>        
-        
+        </article>
+
 
         <article class="dricka1">
             <br><br>
@@ -122,7 +126,7 @@
             <em>Kommer från broccolins <br> ursprungsland, Grekland</em>
             <p>Glas: 120 sek</p>
             <p>Flaska: 700 sek</p>
-        </article>    
+        </article>
 
         <article class="dricka2">
             <br><br>
@@ -151,16 +155,27 @@
 
         <footer>
             <h2>Besök oss på:</h2>
-            
-            <a href="https://www.instagram.com/"><img class="visit_img" src="/img/instagram.jpg" alt="Instagram logga"> Instagram</a>
-            <br>
 
-            <a href="https://sv-se.facebook.com/"><img class="visit_img" src="/img/facebook.jpg" alt="Facebook logga"> Facebook</a>
-            <br>
+            <div class="icons_line">
+                <a href="https://www.instagram.com/"><img class="visit_img" src="/img/instagram.jpg" alt="Instagram logga"></a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <br>
+            </div>
 
-            <a href="https://mobile.twitter.com/?lang=sv"><img class="visit_img" src="/img/twitter.jpg" alt="Twitter logga"> Twitter</a>
+            <div class="icons_line">
+                <a href="https://sv-se.facebook.com/"><img class="visit_img" src="/img/facebook.jpg" alt="Facebook logga"></a>
+                <a href="https://sv-se.facebook.com/">Facebook</a>
+                <br>
+            </div>
+
+            <div class="icons_line">
+                <a href="https://mobile.twitter.com/?lang=sv"><img class="visit_img" src="/img/twitter.jpg" alt="Twitter logga"></a>
+                <a href="https://mobile.twitter.com/?lang=sv">Twitter</a>
+                <br>
+            </div>
         </footer>
 
     </div>
 </body>
+
 </html>

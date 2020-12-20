@@ -1,34 +1,36 @@
 * {
     box-sizing: border-box;
-    margin:0;
-    
+    margin: 0;
 }
 
+
 /*Här är css:n för layouten på alla sidor*/
+
 .wrapper_startsida {
     display: grid;
     grid-template-areas: 
-    'na na na'
-    'he he he'
-    'a1 a1 se'
-    'a2 a2 se'
+    'na na na' 
+    'h1 h1 h1'
+    'he he he' 
+    'a1 a1 se' 
+    'a2 a2 se' 
     'fo fo fo'
     ;
     grid-template-columns: 30% 30% 40%;
-    grid-template-rows: 70px 140px 1fr 1fr 255px;
+    grid-template-rows: 70px 100vh 12vh 1fr 1fr auto;
 }
 
 .wrapper_meny {
     display: grid;
     grid-template-areas: 
-    'na na na'
-    'he he he'
-    'a3 a4 a6'
-    'a5 a7 a8'
+    'na na na' 
+    'he he he' 
+    'a3 a4 a6' 
+    'a5 a7 a8' 
     'fo fo fo'
     ;
     grid-template-columns: 30% 30% 40%;
-    grid-template-rows: 70px 110px auto auto 170px;
+    grid-template-rows: 70px 110px auto auto auto;
     line-height: 1.3;
     position: relative;
 }
@@ -36,21 +38,21 @@
 .wrapper_kontakt {
     display: grid;
     grid-template-areas: 
-    'na na'
-    'he he'
-    'a9 s1'
+    'na na' 
+    'he he' 
+    'a9 s1' 
     'fo fo'
     ;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 70px 110px 1fr 170px;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 70px 110px 1fr auto;
 }
 
 
 /*Samma (använder) css för alla sidor*/
-header{
+
+.header {
     display: flex;
     grid-area: he;
-    background-color: white;
     align-items: center;
     justify-content: center;
     font-family: Garamond;
@@ -62,28 +64,29 @@ nav {
     grid-area: na;
     background-color: rgb(7, 19, 1);
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-size: 20px;
     position: relative;
     position: sticky;
     top: 0;
 }
 
+#nav_korrekt {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+}
+
 nav a {
     color: white;
-    text-decoration: none;
 }
 
 nav a:hover {
     color: rgb(186, 190, 186);
-    text-decoration: none;
 }
 
 #logga {
     width: 85px;
-    position: absolute;
-    top: 8px;
-    left: 15px;
     border-radius: 4px;
 }
 
@@ -95,13 +98,15 @@ footer {
 }
 
 footer a {
-color: white;
-text-decoration: none;
+    color: white;
 }
 
 footer a:hover {
     color: rgb(182, 177, 177);
-    text-decoration: none;
+}
+
+.darker {
+    color: rgb(163, 216, 141);
 }
 
 .visit_img {
@@ -112,6 +117,11 @@ footer a:hover {
     margin-top: 2px;
 }
 
+.icons_line {
+    display: flex;
+    align-items: center;
+}
+
 article {
     margin-left: 10px;
 }
@@ -120,13 +130,26 @@ section {
     margin-left: 10px;
 }
 
-.icons_line {
-    display: flex;
-    align-items: center;
+a {
+    text-decoration: none;
 }
 
-
 /*Här är startsidans css*/
+
+#header_startsida {
+    grid-area: h1;
+    display: flex;
+    padding-left: 750px;
+    align-items: center;
+    background-image: url("/img/broccoli_bakgrund.jpg");
+    background-size: cover;
+    color: whitesmoke;
+    font-size: 70px;
+    font-family: Garamond;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
 .welcome {
     grid-area: a1;
 }
@@ -153,14 +176,7 @@ section {
 }
 
 
-
 /*Här är menyns css*/
-
-.fast {
-    display: flex;
-    position: sticky;
-    top: 70px;
-}
 
 .forratter {
     grid-area: a3;
@@ -189,24 +205,34 @@ section {
 
 /*Här är kontaktsidans css*/
 
-#kockens_presentation {
-    grid-area: s1;
-}
-
-#karta {
-    width: 400px;
+#kontakt {
+    grid-area: a9;
 }
 
 .kontakt_ikon {
     width: 25px;
 }
 
-#kontakt {
-    grid-area: a9;
+#karta {
+    width: 400px;
+}
+
+#kontakt_img_container {
+    grid-area: s1;
+    display: flex;
+    align-items: center;
+}
+
+#downing_street {
+    color: black;
+}
+
+#downing_street :hover {
+    color: darkgray;
 }
 
 #kontaktbild {
-    height: 400px;
-    width: auto;
+    height: auto;
+    width: 300px;
+    border-radius: 3px;
 }
-
